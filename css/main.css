@@ -486,7 +486,6 @@ h2 {
   padding: 70px 70px 110px;
 }
 
-
 #about h2 {
   margin-bottom: 23px;
 }
@@ -756,4 +755,13 @@ h2 {
   color:#1B7B98
 }
 
-
+#desempenho {
+  height:470px;
+}
+.desempenho-content {
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 10px;
+  color: #212121;
+}
