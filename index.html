@@ -55,6 +55,11 @@
 
       ga('create', 'UA-105577095-1', 'auto');
       ga('send', 'pageview');
+
+      var host = "www.malucosportaco.com.br";
+      if ((host == window.location.host) && (window.location.protocol != "https:")) {
+        window.location.protocol = "https";
+      }
     </script>
   </head>
 
