@@ -1,8 +1,10 @@
 jQuery(function($) { 'use strict',
 
   //Countdown js
-  $("#countdown").countdown({ date: "26 Aug 2017 9:00:00", format: "on" }, function() { });
-  $('#countdown_output').text('26/08/2017')
+  var eventDate = new Date();
+
+  $("#countdown").countdown({ date: eventDate.toLocaleDateString("en-US", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }), format: "on" }, function() { });
+  $('#countdown_output').text(eventDate.toLocaleDateString("pt-BR"))
 
   //Scroll Menu
 
